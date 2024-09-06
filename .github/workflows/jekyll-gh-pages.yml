@@ -24,17 +24,24 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0' # Use the Ruby version you need
+          ruby-version: '3.0.7' # Updated to match Ruby version in Gemfile
+
+      - name: List directory contents
+        run: ls -la
+        working-directory: ${{ github.workspace }}
 
       - name: Install Bundler
         run: gem install bundler
+        working-directory: ${{ github.workspace }}
 
       - name: Set Bundler Path
         run: |
           bundle config set path 'vendor/bundle'
+        working-directory: ${{ github.workspace }}
 
       - name: Install dependencies
         run: bundle install
+        working-directory: ${{ github.workspace }}
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
