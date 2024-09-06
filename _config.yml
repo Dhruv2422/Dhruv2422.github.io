@@ -1,0 +1,52 @@
+# Site settings
+title: "Dhruv Dolas' GitHub Pages"
+description: "Welcome to my personal website built with Jekyll and hosted on GitHub Pages."
+baseurl: "" # Leave empty since the site is hosted at the root
+url: "https://dhruv2422.github.io" # Base URL of your site
+
+# Author information
+author:
+  name: "Dhruv Dolas"
+  email: "your-email@example.com" # Replace with your email if you'd like
+
+# Theme settings
+theme: jekyll-theme-primer # Specify the Jekyll theme you are using
+
+# Build settings
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-github-metadata
+
+# Exclude files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle
+
+# Include files in the build
+include:
+  - _pages
+  - _posts
+  - assets
+
+# Pagination settings (optional)
+paginate: 5 # Number of posts per page
+paginate_path: "/page:num/"
+
+# Permalink structure
+permalink: pretty
+
+# GitHub Pages settings
+github:
+  is_project_page: true
+
+# Output settings
+future: true # Show posts dated in the future
