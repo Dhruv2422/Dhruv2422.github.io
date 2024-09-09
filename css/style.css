@@ -875,7 +875,7 @@ ul {
         height: 50px;
     }
 }
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -893,7 +893,6 @@ body {
     background-color: #e6e6e6;
 }
 
-/* Sidebar Styles */
 .sidebar {
     width: 220px;
     background-color: #fff;
@@ -959,7 +958,7 @@ body {
 
 .menu-toggle {
     display: none;
-    background-color: #4CAF50; 
+    background-color: #507935; 
     color: #fff;
     padding: 10px 15px;
     border: none;
