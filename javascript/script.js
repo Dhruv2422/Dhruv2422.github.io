@@ -86,3 +86,9 @@ document.querySelectorAll('.resume-item').forEach(item => {
         item.classList.remove('hovered');
     });
 });
+
+function toggleMenu() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('show');
+}
+
