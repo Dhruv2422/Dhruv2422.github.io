@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhruv Dolas's portfolio showcasing my skills, projects, and experience in tech and data engineering."/>
-    <meta name="google-site-verification" content="gUaIus9Z1W17GLS3Eb9JNpLaDbjvga3Ps6yzNhMloVU" />
+    <meta name="description" content="Dhruv Dolas's portfolio showcasing skills, projects, and experience in AI, ML, and data engineering.">
+    <meta name="google-site-verification" content="gUaIus9Z1W17GLS3Eb9JNpLaDbjvga3Ps6yzNhMloVU">
+
+    <meta property="og:title" content="Dhruv Dolas | AI & Data Engineering Portfolio">
+    <meta property="og:description" content="Portfolio of Dhruv Dolas, M.S. in AI at Northeastern University, showcasing AI/ML, data engineering, and software projects.">
+    <meta property="og:image" content="https://your-domain.com/images/profile.jpg">
+    <meta property="og:url" content="https://your-domain.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dhruv Dolas | AI & Data Engineering">
+    <meta name="twitter:description" content="AI/ML and data engineering projects, experience, and skills.">
+    <meta name="twitter:image" content="https://your-domain.com/images/profile.jpg">
+
     <title>Dhruv Dolas</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -14,6 +25,11 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
+
+<div id="loader">
+    <div class="loader-spinner"></div>
+    <p>Loading portfolio...</p>
+</div>
 
 <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
 
@@ -27,6 +43,7 @@
             <li><a href="#experience"><i class="fas fa-chart-line"></i> Experience</a></li>
             <li><a href="#projects"><i class="fas fa-file-alt"></i> Projects</a></li>
             <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#leadership"><i class="fas fa-users"></i> Leadership</a></li>
             <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
             <li><a href="#resources"><i class="fas fa-link"></i> Resources</a></li>
             <li><a href="#resume"><i class="fas fa-folder"></i> Resume</a></li>
@@ -36,15 +53,14 @@
 
 <div class="main-content">
 
-    <!-- Hero -->
     <section id="hero" class="hero">
         <div class="hero-section">
             <div class="hero-content">
                 <h1>Hi, I'm Dhruv Dolas.</h1>
                 <h2 class="typing"></h2>
                 <p>
-                    Passionate about technology and innovation, I aim to develop impactful applications that solve real-world challenges.
-                    I'm driven to learn and contribute to projects that push technological boundaries.
+                    Passionate about technology and innovation, I develop data-driven and intelligent applications that solve real-world challenges.
+                    With hands-on experience in data engineering, ML, and software development, I focus on building reliable systems that support better decisions at scale.
                 </p>
                 <div class="hero-links">
                     <a href="https://github.com/Dhruv2422" target="_blank" class="social-link">
@@ -65,28 +81,24 @@
         </div>
     </section>
 
-    <!-- About -->
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I'm Dhruv Dolas, a Master's student in Artificial Intelligence at Northeastern University, with a B.Tech in Electronics and Telecommunications and AI/ML minor from Symbiosis Institute of Technology, Pune. 
-        I'm deeply passionate about AI innovation and excel in problem-solving, algorithm design, and collaborative team environments.
-        With professional experience as an Associate Data Engineer at Bristlecone managing global supply chain data and a software development internship at Hexinnotek LLP, I'm proficient in Python, SQL, C++, ML frameworks, and data visualization tools. 
-        
-        My goal is to develop intelligent systems that solve real-world challenges at scale. I'm actively seeking AI/ML engineering, data engineering, or data science internships and full-time roles where I can apply my combined industry experience and graduate-level AI training. 
+            I'm Dhruv Dolas, a Master's student in Artificial Intelligence at Northeastern University with a B.Tech in Electronics and Telecommunications and an AI/ML minor from Symbiosis Institute of Technology, Pune.
+            At Bristlecone, I helped manage and transform global supply chain data for enterprise clients, cleaning large multi-source datasets, building BI dashboards, and enabling faster, more reliable decision-making for stakeholders.
+            At Hexinnotek LLP, I developed database management software with Excel export, interactive plotting, and user-friendly interfaces, improving how teams stored, analyzed, and visualized operational data.
+            My core strengths are Python, SQL, ML frameworks, and data visualization, and my goal is to apply these to build scalable, intelligent systems that solve real-world challenges at scale while collaborating with cross-functional teams.
+            I'm actively seeking AI/ML engineering, data engineering, or data science internships and full-time roles where I can contribute immediately and grow alongside experienced practitioners.
         </p>
     </section>
 
-    <!-- Experience -->
     <section id="experience">
         <h2>Experience</h2>
 
         <div class="card">
             <div class="card-content">
                 <div class="row">
-                    <div class="col s12 m2">
-                        <a class="responsive-img center-block"></a>
-                    </div>
+                    <div class="col s12 m2"></div>
                     <div class="col s12 m10">
                         <p>
                             <span class="card-title">
@@ -97,14 +109,14 @@
                 </div>
                 <div class="role brown-text text-darken-2">Associate Data Engineer</div>
                 <ol class="data">
-                    <li>Collaborating with client to manage data from global suppliers and retailers.</li>
-                    <li>Cleaning and organizing large datasets based on specific quality checks.</li>
-                    <li>Developing BI dashboards to visualize data using BI tools.</li>
-                    <li>Facilitating enhanced data analysis for client companies.</li>
+                    <li>Managed and validated supply chain data from global suppliers and retailers, aligning feeds from multiple sources into a single source of truth.</li>
+                    <li>Cleaned and organized large datasets using defined quality checks, reducing data issues in downstream dashboards.</li>
+                    <li>Developed BI dashboards to visualize inventory, demand, and shipment KPIs, supporting data-driven decisions for enterprise stakeholders.</li>
+                    <li>Collaborated with client stakeholders and internal teams to prioritize data issues and accelerate analysis turnaround time.</li>
                 </ol>
             </div>
             <div class="card-action">
-                <span>June 2024 - Current | Pune, India</span>
+                <span>June 2024 - December 2024 | Pune, India</span>
             </div>
         </div>
 
@@ -120,11 +132,11 @@
                 </div>
                 <div class="role brown-text text-darken-2">Software Developer Intern</div>
                 <ol class="data">
-                    <li>Developed database management software enabling users to efficiently organize and retrieve data.</li>
-                    <li>Implemented features allowing seamless data export in Excel format.</li>
-                    <li>Collaborated with team members to design and implement user-friendly interfaces.</li>
-                    <li>Conducted testing and debugging to maintain software quality and performance.</li>
-                    <li>Modified software to enable selection of tables and creation of plots for analysis.</li>
+                    <li>Developed database management software that enabled users to efficiently organize and retrieve records across multiple tables.</li>
+                    <li>Implemented one-click data export to Excel, streamlining reporting workflows for non-technical team members.</li>
+                    <li>Designed and refined user-friendly interfaces in collaboration with the team, improving usability and reducing manual errors.</li>
+                    <li>Conducted testing and debugging to maintain software quality, improving stability across common user flows.</li>
+                    <li>Added features for selecting tables and generating plots, enabling quick visual analysis of stored data.</li>
                 </ol>
             </div>
             <div class="card-action">
@@ -133,100 +145,100 @@
         </div>
     </section>
 
-    <!-- Projects -->
     <section id="projects">
         <h2>Projects</h2>
+
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="featured">Featured</button>
+            <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+            <button class="filter-btn" data-filter="data">Data & Analytics</button>
+            <button class="filter-btn" data-filter="embedded">Embedded & Hardware</button>
+        </div>
+
         <div class="project-container">
 
-            <div class="project">
+            <div class="project" data-category="featured ai-ml">
                 <img src="images/project1.png" alt="AI and IoT based Integrated Smart Waste Management System" class="project-img">
                 <div class="project-details">
                     <h3>AI and IoT based Integrated Smart Waste Management System</h3>
                     <p>
-                        A patent-published AI and IoT-based smart waste management system using load cells, cameras, and
-                        ultrasonic sensors to optimize collection in malls and corporations and reduce operational costs.
+                        A patent-published AI and IoT-based smart waste management system using load cells, cameras, and ultrasonic sensors to optimize collection in malls and corporations and reduce operational costs.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="featured ai-ml data">
                 <img src="images/project2.png" alt="Network Intrusion Detection System" class="project-img">
                 <div class="project-details">
                     <h3>Network Intrusion Detection System</h3>
                     <p>
-                        GAN-based IDS that continuously learns from historical traffic to detect emerging threats, reduce
-                        false positives, and improve recognition of zero-day attacks.
+                        GAN-based IDS that continuously learns from historical traffic to detect emerging threats, reduce false positives, and improve recognition of zero-day attacks.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="ai-ml">
                 <img src="images/project10.png" alt="Underwater Image Enhancement" class="project-img">
                 <div class="project-details">
                     <h3>Underwater Image Enhancement</h3>
                     <p>
-                        IJIRT-published work using adaptive histogram equalization and linear histogram manipulation to
-                        enhance underwater images and recover details in low-visibility conditions.
+                        IJIRT-published work using adaptive histogram equalization and linear histogram manipulation to enhance underwater images and recover details in low-visibility conditions.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="ai-ml">
                 <img src="images/project3.png" alt="Skin Type Analysis using Inception and ITA" class="project-img">
                 <div class="project-details">
                     <h3>Skin Type Analysis using Inception and ITA</h3>
                     <p>
-                        Automated skin type classification system using Inception-based features and ITA to provide
-                        personalized skincare recommendations based on tone and disease detection.
+                        Automated skin type classification system using Inception-based features and ITA to provide personalized skincare recommendations based on tone and disease detection.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="data">
                 <div class="project-details">
                     <img src="images/project4.png" alt="Breast Cancer Detection and Analysis" class="project-img">
                     <h3>Breast Cancer Detection and Analysis</h3>
                     <p>
-                        Haberman dataset analysis showing axillary node count as a key predictor of post-surgery survival,
-                        with fewer nodes associated with better long-term outcomes.
+                        Haberman dataset analysis showing axillary node count as a key predictor of post-surgery survival, with fewer nodes associated with better long-term outcomes.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="ai-ml embedded">
                 <img src="images/project5.png" alt="Facial Recognition Based Attendance System" class="project-img">
                 <div class="project-details">
                     <h3>Facial Recognition Based Attendance System</h3>
                     <p>
-                        Face-recognition-based automated attendance system using Haar-Cascade detection and LBPH
-                        recognition to reduce manual roll calls and proxy attendance.
+                        Face-recognition-based automated attendance system using Haar-Cascade detection and LBPH recognition to reduce manual roll calls and proxy attendance.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="embedded">
                 <img src="images/project6.png" alt="Bluetooth Noticeboard using Arduino" class="project-img">
                 <div class="project-details">
                     <h3>Bluetooth Noticeboard using Arduino</h3>
                     <p>
-                        Wireless noticeboard controlled via Bluetooth to receive and display SMS or audio-based messages,
-                        replacing manual notice updates with a faster digital approach.
+                        Wireless noticeboard controlled via Bluetooth to receive and display SMS or audio-based messages, replacing manual notice updates with a faster digital approach.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="data">
                 <img src="images/project7.png" alt="Hospital Management System" class="project-img">
                 <div class="project-details">
                     <h3>Hospital Management System</h3>
                     <p>
-                        DBMS-backed HMS that centralizes data, improves patient care workflows, optimizes resources,
-                        and enforces data security across hospital departments.
+                        DBMS-backed HMS that centralizes data, improves patient care workflows, optimizes resources, and enforces data security across hospital departments.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="featured ai-ml">
                 <div class="project-images">
                     <img src="images/project8.png" alt="Virtual Keyboard using Hand Gestures" class="project-img">
                     <img src="images/project8-2.png" alt="Virtual Keyboard using Hand Gestures Example" class="project-img">
@@ -234,24 +246,22 @@
                 <div class="project-details">
                     <h3>Virtual Keyboard using Hand Gestures</h3>
                     <p>
-                        IJIRT-published virtual keyboard for English using image processing and hand gestures, ideal for
-                        compact devices and projected surfaces as an eco-friendly alternative to hardware keyboards.
+                        IJIRT-published virtual keyboard for English using image processing and hand gestures, ideal for compact devices and projected surfaces as an eco-friendly alternative to hardware keyboards.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="ai-ml embedded">
                 <img src="images/project9.png" alt="Performance Analysis for Hybrid Beamforming using Deep Learning" class="project-img">
                 <div class="project-details">
                     <h3>Performance Analysis for Hybrid Beamforming using Deep Learning</h3>
                     <p>
-                        Unsupervised DNN-based hybrid beamforming using RSSI instead of full CSI to improve spectral
-                        efficiency and reduce feedback overhead in FDD MIMO systems.
+                        Unsupervised DNN-based hybrid beamforming using RSSI instead of full CSI to improve spectral efficiency and reduce feedback overhead in FDD MIMO systems.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="data">
                 <div class="project-images">
                     <img src="images/project10-lr.png" alt="Linear Regression" class="project-img">
                     <img src="images/project10-logr.png" alt="Logistic Regression" class="project-img">
@@ -261,13 +271,12 @@
                 <div class="project-details">
                     <h3>Trends in Bitcoin Price Prediction and Analysis</h3>
                     <p>
-                        Comparative study of KNN, Logistic Regression, SARIMA, and Linear Regression models for Bitcoin
-                        price prediction to evaluate forecasting performance on volatile data.
+                        Comparative study of KNN, Logistic Regression, SARIMA, and Linear Regression models for Bitcoin price prediction to evaluate forecasting performance on volatile data.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="data">
                 <img src="images/project12-1.png" alt="Crime Analysis using Clustering" class="crime-project-img">
                 <img src="images/project12-2.png" alt="Crime Analysis using Clustering" class="crime-project-img">
                 <img src="images/project12-3.png" alt="Crime Analysis using Clustering" class="crime-project-img">
@@ -275,30 +284,27 @@
                 <div class="project-details">
                     <h3>Crime Analysis using Clustering</h3>
                     <p>
-                        EDA and clustering on U.S. crime data to uncover spatial and demographic patterns, supporting
-                        data-driven strategies for law enforcement and policymakers.
+                        EDA and clustering on U.S. crime data to uncover spatial and demographic patterns, supporting data-driven strategies for law enforcement and policymakers.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="embedded">
                 <img src="images/project11.png" alt="Thermometer Using PIC18F4520 Microcontroller" class="project-img">
                 <div class="project-details">
                     <h3>Thermometer Using PIC18F4520 Microcontroller</h3>
                     <p>
-                        Temperature measurement system using LM35 and PIC18F4520, converting analog voltage to digital
-                        values and displaying calibrated temperature on an LCD.
+                        Temperature measurement system using LM35 and PIC18F4520, converting analog voltage to digital values and displaying calibrated temperature on an LCD.
                     </p>
                 </div>
             </div>
 
-            <div class="project">
+            <div class="project" data-category="ai-ml">
                 <img src="images/project13.png" alt="Classification of Roads using Reinforcement Learning and Q Learning" class="project-img">
                 <div class="project-details">
                     <h3>Classification using Reinforcement Learning and Q Learning</h3>
                     <p>
-                        Q-learning-based classifier to label roads as clean or dirty from 237 images, supporting smarter
-                        road maintenance and public health interventions.
+                        Q-learning-based classifier to label roads as clean or dirty from 237 images, supporting smarter road maintenance and public health interventions.
                     </p>
                 </div>
             </div>
@@ -306,39 +312,13 @@
         </div>
     </section>
 
-    <!-- Extras -->
-    <section id="extras">
-        <h2>Extra Curricular Activities</h2>
-        <div class="extra">
-            <div class="extra-details">
-                <h4>Event Host</h4>
-                <p>
-                    Hosted an IEEE-sponsored event during the college fest and built physical and virtual circuits on
-                    Tinkerlab for participants.
-                </p>
-            </div>
-        </div>
-        <div class="extra">
-            <div class="extra-details">
-                <h4>Volunteering</h4>
-                <p>
-                    Volunteered at a village named Mulkhed, educating residents on disease prevention and treating
-                    potential mosquito breeding sites.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education -->
     <section id="education">
         <h2>Education</h2>
 
-        <!-- MS in AI – Northeastern -->
         <div class="card">
             <div class="card-content">
                 <div class="row">
                     <div class="col s12 m2">
-                        <!-- Add your Northeastern logo -->
                         <img src="images/northeastern.png" alt="Northeastern University Logo" class="responsive-img center-block">
                     </div>
                     <div class="col s12 m10">
@@ -359,7 +339,6 @@
             </div>
         </div>
 
-        <!-- B.Tech – SIT -->
         <div class="card">
             <div class="card-content">
                 <div class="row">
@@ -390,7 +369,26 @@
         </div>
     </section>
 
-    <!-- Skills -->
+    <section id="leadership">
+        <h2>Leadership & Volunteering</h2>
+        <div class="extra">
+            <div class="extra-details">
+                <h4>Event Host</h4>
+                <p>
+                    Hosted an IEEE-sponsored event during the college fest and built physical and virtual circuits on Tinkerlab for participants.
+                </p>
+            </div>
+        </div>
+        <div class="extra">
+            <div class="extra-details">
+                <h4>Volunteering</h4>
+                <p>
+                    Volunteered at a village named Mulkhed, educating residents on disease prevention and treating potential mosquito breeding sites.
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-content">
@@ -476,7 +474,6 @@
         </div>
     </section>
 
-
     <section id="resources">
         <h2>Resources</h2>
         <div class="course-links">
@@ -498,7 +495,6 @@
         </div>
     </section>
 
-    <!-- Resume -->
     <section id="resume">
         <h3>Resume</h3>
         <div class="resume-links">
@@ -510,7 +506,6 @@
         </div>
     </section>
 
-    <!-- Contact -->
     <section id="contact">
         <h2>Contact</h2>
         <p>You can reach me at <a href="mailto:ddolas2422@gmail.com">ddolas2422@gmail.com</a></p>
@@ -526,7 +521,6 @@
         </p>
     </section>
 
-    <!-- Lightbox -->
     <div id="lightbox" class="lightbox">
         <span class="close">&times;</span>
         <img class="lightbox-content" id="lightbox-img">
@@ -534,24 +528,7 @@
     </div>
 </div>
 
-<!-- JS -->
-<script>
-    function toggleMenu() {
-        const sidebar = document.querySelector('.sidebar');
-        sidebar.classList.toggle('show');
-    }
-</script>
 <script src="javascript/typed.min.js"></script>
-<script type="text/javascript">
-    var typed = new Typed('.typing', {
-        strings: ["Tech Enthusiast", "Developer", "Digital Innovator"],
-        loop: true,
-        typeSpeed: 80,
-        backSpeed: 40
-    });
-</script>
-
+<script src="javascript/main.js"></script>
 </body>
 </html>
-
-
