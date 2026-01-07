@@ -103,6 +103,7 @@ body {
     overflow: hidden;
     transition: color var(--transition-fast), background var(--transition-med),
         transform var(--transition-fast);
+    background: transparent;
 }
 
 .nav-links a i {
