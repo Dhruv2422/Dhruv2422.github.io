@@ -801,3 +801,28 @@ section p {
         grid-template-columns: 1fr;
     }
 }
+
+/* override Materialize active styles on sidebar items */
+.sidebar .nav-links li a,
+.sidebar .nav-links li a:hover,
+.sidebar .nav-links li a.active {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--text-muted);
+}
+
+/* your custom hover + active look */
+.sidebar .nav-links li a:hover {
+    color: var(--text-main);
+    background: rgba(15, 23, 42, 0.9);
+}
+
+.sidebar .nav-links li a.active {
+    color: var(--text-main);
+    background: linear-gradient(
+        135deg,
+        rgba(79, 70, 229, 0.28),
+        rgba(37, 99, 235, 0.15)
+    );
+    border: 1px solid rgba(129, 140, 248, 0.7);
+}
