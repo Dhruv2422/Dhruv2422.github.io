@@ -1,4 +1,3 @@
-
 function toggleMenu() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.classList.toggle("show");
@@ -7,9 +6,7 @@ function toggleMenu() {
 document.addEventListener("click", (e) => {
     const sidebar = document.querySelector(".sidebar");
     const toggle = document.querySelector(".menu-toggle");
-
     if (!sidebar || !toggle) return;
-
     if (
         sidebar.classList.contains("show") &&
         !sidebar.contains(e.target) &&
@@ -19,18 +16,22 @@ document.addEventListener("click", (e) => {
     }
 });
 
+window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+    if (!loader) return;
+    loader.style.opacity = "0";
+    setTimeout(() => loader.remove(), 350);
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     const navLinks = document.querySelectorAll(".nav-links a[href^='#']");
-
     navLinks.forEach((link) => {
         link.addEventListener("click", (e) => {
             e.preventDefault();
             const targetId = link.getAttribute("href");
             const targetEl = document.querySelector(targetId);
             if (!targetEl) return;
-
             targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
-
             const sidebar = document.querySelector(".sidebar");
             if (window.innerWidth <= 960 && sidebar.classList.contains("show")) {
                 sidebar.classList.remove("show");
@@ -44,10 +45,8 @@ const sectionObserver = new IntersectionObserver(
         entries.forEach((entry) => {
             const id = entry.target.getAttribute("id");
             if (!id) return;
-
             const link = document.querySelector(`.nav-links a[href="#${id}"]`);
             if (!link) return;
-
             if (entry.isIntersecting) {
                 document
                     .querySelectorAll(".nav-links a")
@@ -123,13 +122,39 @@ if (lightbox && lightboxImg && captionText) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const projects = document.querySelectorAll(".project");
+    if (!filterButtons.length || !projects.length) return;
+
+    filterButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const filter = btn.getAttribute("data-filter");
+            filterButtons.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+            projects.forEach((project) => {
+                const categories = project.getAttribute("data-category") || "";
+                if (
+                    filter === "all" ||
+                    categories.split(" ").includes(filter)
+                ) {
+                    project.style.display = "block";
+                } else {
+                    project.style.display = "none";
+                }
+            });
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
     if (window.Typed) {
         new Typed(".typing", {
             strings: ["Tech Enthusiast", "Developer", "Digital Innovator"],
             loop: true,
             typeSpeed: 80,
             backSpeed: 40,
-            backDelay: 1500,
+            backDelay: 2000,
+            smartBackspace: true
         });
     }
 });
