@@ -31,7 +31,8 @@ html {
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
     background: radial-gradient(circle at top left, #111827 0, #020617 45%, #020617 100%);
     color: var(--text-main);
     display: flex;
@@ -46,7 +47,11 @@ body {
     width: 260px;
     height: 100vh;
     padding: 24px 20px;
-    background: linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(17, 24, 39, 0.98));
+    background: linear-gradient(
+        145deg,
+        rgba(15, 23, 42, 0.96),
+        rgba(17, 24, 39, 0.98)
+    );
     border-right: 1px solid var(--border-subtle);
     box-shadow: 18px 0 50px rgba(15, 23, 42, 0.85);
     display: flex;
@@ -96,7 +101,8 @@ body {
     border-radius: var(--radius-md);
     position: relative;
     overflow: hidden;
-    transition: color var(--transition-fast), background var(--transition-med), transform var(--transition-fast);
+    transition: color var(--transition-fast), background var(--transition-med),
+        transform var(--transition-fast);
     background: transparent;
 }
 
@@ -110,7 +116,11 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at left, rgba(79, 70, 229, 0.25), transparent);
+    background: radial-gradient(
+        circle at left,
+        rgba(79, 70, 229, 0.25),
+        transparent
+    );
     opacity: 0;
     transition: opacity var(--transition-med);
 }
@@ -127,7 +137,11 @@ body {
 
 .nav-links a.active {
     color: var(--text-main);
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.28), rgba(37, 99, 235, 0.15));
+    background: linear-gradient(
+        135deg,
+        rgba(79, 70, 229, 0.28),
+        rgba(37, 99, 235, 0.15)
+    );
     border: 1px solid rgba(129, 140, 248, 0.7);
 }
 
@@ -198,7 +212,13 @@ section::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.08), transparent 40%, transparent 60%, rgba(45, 212, 191, 0.08));
+    background: linear-gradient(
+        135deg,
+        rgba(79, 70, 229, 0.08),
+        transparent 40%,
+        transparent 60%,
+        rgba(45, 212, 191, 0.08)
+    );
     mix-blend-mode: screen;
     opacity: 0.9;
     pointer-events: none;
@@ -268,7 +288,8 @@ section p {
     border: 1px solid rgba(148, 163, 184, 0.6);
     background: rgba(15, 23, 42, 0.85);
     color: var(--text-main);
-    transition: transform var(--transition-med), box-shadow var(--transition-med), border-color var(--transition-med), background var(--transition-med);
+    transition: transform var(--transition-med), box-shadow var(--transition-med),
+        border-color var(--transition-med), background var(--transition-med);
 }
 
 .social-link i {
@@ -303,7 +324,8 @@ section p {
     background: linear-gradient(135deg, #4f46e5, #22c55e);
     color: #f9fafb;
     box-shadow: 0 15px 35px rgba(79, 70, 229, 0.5);
-    transition: transform var(--transition-med), box-shadow var(--transition-med), filter var(--transition-med);
+    transition: transform var(--transition-med), box-shadow var(--transition-med),
+        filter var(--transition-med);
 }
 
 .btn:hover {
@@ -388,7 +410,8 @@ section p {
     color: var(--text-main);
     font-size: 0.85rem;
     cursor: pointer;
-    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease,
+        box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .filter-btn:hover {
@@ -416,7 +439,8 @@ section p {
     border: 1px solid rgba(55, 65, 81, 0.9);
     box-shadow: 0 15px 40px rgba(15, 23, 42, 0.95);
     transform: translateY(0);
-    transition: transform var(--transition-med), box-shadow var(--transition-med), border-color var(--transition-med);
+    transition: transform var(--transition-med), box-shadow var(--transition-med),
+        border-color var(--transition-med);
     cursor: pointer;
 }
 
@@ -430,9 +454,6 @@ section p {
     pointer-events: none;
 }
 
-.project:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 25px 55px rgba(15
 .project:hover {
     transform: translateY(-6px);
     box-shadow: 0 25px 55px rgba(15, 23, 42, 1);
@@ -528,7 +549,8 @@ section p {
     padding: 8px 6px;
     border: 1px solid rgba(55, 65, 81, 0.9);
     box-shadow: 0 10px 25px rgba(15, 23, 42, 0.9);
-    transition: transform var(--transition-med), box-shadow var(--transition-med), border-color var(--transition-med);
+    transition: transform var(--transition-med), box-shadow var(--transition-med),
+        border-color var(--transition-med);
 }
 
 .language-box img {
@@ -565,7 +587,8 @@ section p {
     text-decoration: none;
     font-size: 0.9rem;
     border: 1px solid rgba(55, 65, 81, 0.9);
-    transition: background var(--transition-med), transform var(--transition-med), box-shadow var(--transition-med), border-color var(--transition-med);
+    transition: background var(--transition-med), transform var(--transition-med),
+        box-shadow var(--transition-med), border-color var(--transition-med);
 }
 
 .course a:hover {
@@ -593,7 +616,8 @@ section p {
     color: var(--text-main);
     border: 1px solid rgba(55, 65, 81, 0.9);
     box-shadow: 0 10px 24px rgba(15, 23, 42, 0.95);
-    transition: transform var(--transition-med), box-shadow var(--transition-med), border-color var(--transition-med), background var(--transition-med);
+    transition: transform var(--transition-med), box-shadow var(--transition-med),
+        border-color var(--transition-med), background var(--transition-med);
 }
 
 .resume-item img {
@@ -726,7 +750,6 @@ section p {
     }
 }
 
-/* Tablet Responsive */
 @media (max-width: 960px) {
     .sidebar {
         transform: translateX(-100%);
@@ -760,7 +783,6 @@ section p {
     }
 }
 
-/* Mobile Responsive with Project Fix */
 @media (max-width: 600px) {
     .hero {
         min-height: 60vh;
@@ -771,78 +793,8 @@ section p {
         align-items: flex-start;
     }
 
-    .main-content {
-        padding: 70px 12px 50px;
-    }
-
-    section {
-        padding: 18px 14px 20px;
-        margin-bottom: 40px;
-    }
-
-    /* CRITICAL FIX: Force projects to be visible on mobile */
-    .reveal {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-    }
-
-    .reveal.project {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-    }
-
-    /* Fix project grid on mobile */
     .project-container {
-        grid-template-columns: 1fr !important;
-        gap: 14px;
-    }
-
-    .project {
-        min-width: 0;
-        width: 100%;
-        margin-bottom: 0;
-        display: block !important;
-    }
-
-    /* Optimize images for mobile */
-    .project-img,
-    .crime-project-img {
-        width: 100%;
-        height: auto;
-        max-height: 200px;
-        object-fit: cover;
-    }
-
-    /* Stack multi-images on mobile */
-    .project-images {
         grid-template-columns: 1fr;
-        gap: 6px;
-    }
-
-    /* Adjust filter buttons */
-    .project-filters {
-        gap: 6px;
-        margin-bottom: 16px;
-    }
-
-    .filter-btn {
-        font-size: 0.8rem;
-        padding: 5px 10px;
-    }
-
-    /* Fix project details padding */
-    .project-details {
-        padding: 12px 14px 14px;
-    }
-
-    .project-details h3 {
-        font-size: 0.95rem;
-        line-height: 1.3;
-    }
-
-    .project-details p {
-        font-size: 0.85rem;
-        line-height: 1.5;
     }
 
     .course-links {
@@ -850,7 +802,7 @@ section p {
     }
 }
 
-/* Override Materialize active styles on sidebar items */
+/* override Materialize active styles on sidebar items */
 .sidebar .nav-links li a,
 .sidebar .nav-links li a:hover,
 .sidebar .nav-links li a.active {
@@ -859,6 +811,7 @@ section p {
     color: var(--text-muted);
 }
 
+/* your custom hover + active look */
 .sidebar .nav-links li a:hover {
     color: var(--text-main);
     background: rgba(15, 23, 42, 0.9);
@@ -866,15 +819,10 @@ section p {
 
 .sidebar .nav-links li a.active {
     color: var(--text-main);
-    background: linear-gradient(135deg, rgba(79, 70, 229, 0.28), rgba(37, 99, 235, 0.15));
+    background: linear-gradient(
+        135deg,
+        rgba(79, 70, 229, 0.28),
+        rgba(37, 99, 235, 0.15)
+    );
     border: 1px solid rgba(129, 140, 248, 0.7);
-}
-
-/* Accessibility: Reduced Motion */
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
 }
