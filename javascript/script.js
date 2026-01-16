@@ -89,8 +89,8 @@ const revealObserver = new IntersectionObserver(
         });
     },
     { 
-        threshold: window.innerWidth <= 600 ? 0.05 : 0.16,  // Lower threshold on mobile
-        rootMargin: '0px 0px -50px 0px'  // Trigger slightly before element enters viewport
+        threshold: window.innerWidth <= 600 ? 0.05 : 0.16,
+        rootMargin: '0px 0px -50px 0px'
     }
 );
 
@@ -105,7 +105,7 @@ if (window.innerWidth <= 600) {
                 el.classList.add('visible');
             }
         });
-    }, 500);  // Wait 500ms then force visibility
+    }, 500);
 }
 
 // Additional mobile check on scroll for projects specifically
@@ -238,7 +238,44 @@ window.addEventListener('resize', () => {
             // Force all projects visible on mobile after resize
             document.querySelectorAll('.project').forEach(project => {
                 project.classList.add('visible');
+                project.style.opacity = '1';
+                project.style.transform = 'translateY(0)';
             });
         }
     }, 250);
 });
+
+// Force visibility check on DOM content loaded (extra safety)
+document.addEventListener('DOMContentLoaded', () => {
+    if (window.innerWidth <= 600) {
+        setTimeout(() => {
+            const projectSection = document.getElementById('projects');
+            if (projectSection) {
+                const allProjects = projectSection.querySelectorAll('.project');
+                allProjects.forEach(project => {
+                    project.style.display = 'block';
+                    project.style.opacity = '1';
+                    project.style.transform = 'translateY(0)';
+                    project.classList.add('visible');
+                });
+            }
+        }, 100);
+    }
+});
+
+// Debug helper - Log project visibility on mobile (remove in production)
+if (window.innerWidth <= 600) {
+    setTimeout(() => {
+        const projects = document.querySelectorAll('.project');
+        console.log(`Total projects found: ${projects.length}`);
+        projects.forEach((project, index) => {
+            const styles = window.getComputedStyle(project);
+            console.log(`Project ${index + 1}:`, {
+                display: styles.display,
+                opacity: styles.opacity,
+                transform: styles.transform,
+                visible: project.classList.contains('visible')
+            });
+        });
+    }, 1000);
+}
