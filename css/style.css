@@ -577,6 +577,7 @@ section p {
 
 .project {
     position: relative;
+     display: block !important;
     background: radial-gradient(circle at top left, rgba(17, 24, 39, 0.96), #020617);
     border-radius: var(--radius-lg);
     overflow: hidden;
@@ -1081,5 +1082,6 @@ section p {
     width: 220px;
   }
 }
+
 
 
