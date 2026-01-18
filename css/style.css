@@ -1007,3 +1007,79 @@ section p {
     }
 }
 
+/* Ultra-mobile optimization (under 480px) */
+@media (max-width: 480px) {
+  .main-content {
+    padding: 70px 12px 40px;
+  }
+  section {
+    padding: 18px 12px 20px;
+    margin-bottom: 40px;
+  }
+  .programming-languages {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .language-box {
+    width: 100%;
+    padding: 6px 4px;
+  }
+  .project-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .tech-stack {
+    gap: 4px;
+  }
+  .tech-badge {
+    padding: 4px 8px;
+    font-size: 0.7rem;
+  }
+  .course-links {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+  .card {
+    margin-bottom: 12px;
+  }
+  .card-content {
+    padding: 14px 14px 10px;
+  }
+  .project-details {
+    padding: 8px 10px 10px;
+  }
+}
+
+/* Extra small mobile (under 380px) */
+@media (max-width: 380px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .hero-content h2.typing {
+    font-size: 1rem;
+  }
+  section h2, section h3 {
+    font-size: 1.4rem;
+  }
+  .programming-languages {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .lightbox-content {
+    max-width: 95%;
+    max-height: 75%;
+  }
+  .lightbox .close {
+    top: 10px;
+    right: 14px;
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablet optimization (max-width: 768px) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+  }
+}
+
+
