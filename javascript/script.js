@@ -125,6 +125,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll(".filter-btn");
     const projects = document.querySelectorAll(".project");
     if (!filterButtons.length || !projects.length) return;
+      // Initialize: Show all projects and set 'All' button as active
+  projects.forEach((project) => {
+    project.style.display = "block";
+  });
+  const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+  if (allBtn) {
+    allBtn.classList.add("active");
+  }
 
     filterButtons.forEach((btn) => {
         btn.addEventListener("click", () => {
@@ -166,3 +174,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
