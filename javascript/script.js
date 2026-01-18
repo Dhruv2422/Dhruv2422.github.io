@@ -146,15 +146,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// FIXED TYPING ANIMATION
 document.addEventListener("DOMContentLoaded", () => {
     if (window.Typed) {
         new Typed(".typing", {
-            strings: ["Tech Enthusiast", "Developer", "Digital Innovator"],
+            strings: [
+                "AI/ML Engineer", 
+                "Data Engineer", 
+                "Machine Learning Specialist"
+            ],
             loop: true,
             typeSpeed: 80,
             backSpeed: 40,
             backDelay: 2000,
-            smartBackspace: true
+            smartBackspace: true,
+            showCursor: true,
+            cursorChar: "|",
+            autoInsertCss: true
         });
     }
 });
