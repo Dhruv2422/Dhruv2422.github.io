@@ -1,509 +1,613 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Dhruv Dolas - AI/ML Engineer | MS in AI @ Northeastern | Data Engineering, Machine Learning, Deep Learning | Python, TensorFlow, PyTorch, SQL">
-    <meta name="google-site-verification" content="gUaIus9Z1W17GLS3Eb9JNpLaDbjvga3Ps6yzNhMloVU">
-    <meta property="og:title" content="Dhruv Dolas | AI/ML Engineer & Data Engineer">
-    <meta property="og:description" content="AI/ML Engineer specializing in machine learning pipelines, data engineering, and intelligent systems. MS in AI @ Northeastern University.">
-    <meta property="og:image" content="https://dhruv2422.github.io/images/profile.jpg">
-    <meta property="og:url" content="https://dhruv2422.github.io/">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dhruv Dolas | AI/ML Engineer">
-    <meta name="twitter:description" content="AI/ML and data engineering expert with experience in production ML systems.">
-    <meta name="twitter:image" content="https://dhruv2422.github.io/images/profile.jpg">
-    <title>Dhruv Dolas | AI/ML Engineer</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dhruv Dolas - MS in Artificial Intelligence at Northeastern University building ML systems, data pipelines, and reliable AI applications." />
+  <meta name="google-site-verification" content="gUaIus9Z1W17GLS3Eb9JNpLaDbjvga3Ps6yzNhMloVU" />
+  <meta property="og:title" content="Dhruv Dolas | ML & Data Engineering Portfolio" />
+  <meta property="og:description" content="MS in AI at Northeastern with experience in machine learning, data engineering, ETL pipelines, and reliable AI systems." />
+  <meta property="og:image" content="https://dhruv2422.github.io/images/profile.jpg" />
+  <meta property="og:url" content="https://dhruv2422.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dhruv Dolas | ML & Data Engineering Portfolio" />
+  <meta name="twitter:description" content="MS in AI at Northeastern building ML systems, data pipelines, and reliable AI applications." />
+  <meta name="twitter:image" content="https://dhruv2422.github.io/images/profile.jpg" />
+  <title>Dhruv Dolas | ML & Data Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-<div id="loader">
+  <div id="loader" aria-hidden="true">
     <div class="loader-spinner"></div>
     <p>Loading portfolio...</p>
-</div>
+  </div>
 
-<button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-<aside class="sidebar">
-    <div class="profile">
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-photo">
-    </div>
-    <nav class="nav-links">
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar" aria-label="Toggle navigation">
+    <span>Menu</span>
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <div class="profile-block">
+        <img src="images/profile.jpg" alt="Dhruv Dolas" class="profile-photo" />
+        <div>
+          <h2>Dhruv Dolas</h2>
+          <p>MS in AI @ Northeastern</p>
+          <span class="availability-pill">Open to ML / AI / Data roles</span>
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Section navigation">
         <ul>
-            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#experience"><i class="fas fa-chart-line"></i> Experience</a></li>
-            <li><a href="#projects"><i class="fas fa-file-alt"></i> Projects</a></li>
-            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-            <li><a href="#leadership"><i class="fas fa-users"></i> Leadership</a></li>
-            <li><a href="#skills"><i class="fas fa-chart-bar"></i> Skills</a></li>
-            <li><a href="#resume"><i class="fas fa-folder"></i> Resume</a></li>
+          <li><a href="#hero" class="active"><i class="fas fa-house"></i><span>Home</span></a></li>
+          <li><a href="#about"><i class="fas fa-user"></i><span>About</span></a></li>
+          <li><a href="#projects"><i class="fas fa-diagram-project"></i><span>Projects</span></a></li>
+          <li><a href="#experience"><i class="fas fa-briefcase"></i><span>Experience</span></a></li>
+          <li><a href="#education"><i class="fas fa-graduation-cap"></i><span>Education</span></a></li>
+          <li><a href="#publications"><i class="fas fa-scroll"></i><span>Publications</span></a></li>
+          <li><a href="#skills"><i class="fas fa-code"></i><span>Skills</span></a></li>
+          <li><a href="#leadership"><i class="fas fa-people-group"></i><span>Leadership</span></a></li>
+          <li><a href="#contact"><i class="fas fa-envelope"></i><span>Contact</span></a></li>
         </ul>
-    </nav>
-</aside>
+      </nav>
 
-<div class="main-content">
-    <section id="hero" class="hero">
-        <div class="hero-section">
-            <div class="hero-content">
-                <h1>Hi, I'm Dhruv Dolas.</h1>
-                <h2 class="typing"></h2>
-                <div class="availability-badge">
-                    <span class="status-dot"></span>
-                    Open to Summer 2026 Internships | Boston & Remote
-                </div>
-                <div class="tech-stack">
-                    <span class="tech-badge">Python</span>
-                    <span class="tech-badge">TensorFlow</span>
-                    <span class="tech-badge">PyTorch</span>
-                    <span class="tech-badge">SQL</span>
-                    <span class="tech-badge">Azure</span>
-                    <span class="tech-badge">Pandas</span>
-                    <span class="tech-badge">Scikit-learn</span>
-                </div>
-                <p>AI/ML Engineer building intelligent systems that solve real-world problems at scale. MS in AI @ Northeastern University with hands-on experience in data engineering, machine learning pipelines, and deploying production models.</p>
-                <div class="hero-links">
-                    <a href="https://github.com/Dhruv2422" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/dhruv-dolas-71b26422b/" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://medium.com/@dhruvdolas" target="_blank" class="social-link" aria-label="Medium"><i class="fab fa-medium"></i></a>
-                </div>
-                <div class="hero-buttons">
-                    <a href="https://drive.google.com/file/d/1SzdcBki7pTOQYgB4GaKglEor0BK6cMG4/view?usp=sharing" target="_blank" class="btn btn-primary"><i class="fas fa-download"></i> Download Resume</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
+      <div class="sidebar-footer">
+        <a href="mailto:ddolas2422@gmail.com" class="sidebar-email">ddolas2422@gmail.com</a>
+        <div class="social-links">
+          <a href="https://github.com/Dhruv2422" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dhruv-dolas-71b26422b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://medium.com/@dhruvdolas" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fab fa-medium-m"></i></a>
         </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p class="about-lead">AI/ML Engineer building intelligent systems that solve real-world problems at scale.</p>
-        <p>I'm currently pursuing my Master's in Artificial Intelligence at Northeastern University, with a background in Electronics and Telecommunications engineering and an AI/ML specialization from Symbiosis Institute of Technology, Pune.</p>
-        <p>Previously, I worked as an Associate Data Engineer at Bristlecone, where I managed and transformed <strong>500K+ supply chain records</strong> from global enterprise clients, built BI dashboards that reduced decision-making time by <strong>40%</strong>, and implemented data quality frameworks that decreased downstream errors by <strong>35%</strong>.</p>
-        <p>My technical expertise spans <strong>Python, TensorFlow, PyTorch, SQL, and Azure ML</strong>, with hands-on experience in building production ML pipelines, data engineering systems, and deep learning models. I'm passionate about applying AI/ML to solve complex real-world challenges.</p>
-        <p><strong>Currently seeking Summer 2026 internships</strong> in AI/ML Engineering, Data Engineering, or Machine Learning roles where I can contribute to impactful projects and grow alongside experienced practitioners.</p>
-    </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2"></div>
-                    <div class="col s12 m10">
-                        <p><span class="card-title"><a href="https://www.bristlecone.com/" target="_blank">Bristlecone</a></span></p>
-                    </div>
-                </div>
-                <div class="role brown-text text-darken-2">Associate Data Engineer</div>
-                <ol class="data">
-                    <li>Managed and validated <strong>500K+ supply chain records</strong> from global suppliers and retailers, aligning feeds from 12+ sources into a unified data warehouse with <strong>99.5% accuracy</strong></li>
-                    <li>Cleaned and organized large datasets using automated quality checks, reducing data issues in downstream dashboards by <strong>35%</strong> and improving data reliability</li>
-                    <li>Developed <strong>15+ BI dashboards</strong> in Power BI to visualize inventory, demand, and shipment KPIs, supporting data-driven decisions for enterprise stakeholders and reducing analysis time by <strong>40%</strong></li>
-                    <li>Collaborated with client stakeholders across 5+ enterprise accounts and internal teams to prioritize data issues, accelerating analysis turnaround time from 5 days to <strong>2 days</strong></li>
-                </ol>
-            </div>
-            <div class="card-action"><span>June 2024 - December 2024 | Pune, India</span></div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2"></div>
-                    <div class="col s12 m10">
-                        <p><span class="card-title company-name">Hexinnotek LLP</span></p>
-                    </div>
-                </div>
-                <div class="role brown-text text-darken-2">Software Developer Intern</div>
-                <ol class="data">
-                    <li>Developed database management software enabling efficient organization and retrieval of <strong>10K+ records</strong> across multiple tables, reducing query time by <strong>50%</strong></li>
-                    <li>Implemented one-click data export to Excel, streamlining reporting workflows for 15+ non-technical team members and saving <strong>10 hours/week</strong></li>
-                    <li>Designed and refined user-friendly interfaces in collaboration with the team, improving usability scores by <strong>40%</strong> and reducing manual errors by <strong>60%</strong></li>
-                    <li>Conducted testing and debugging to maintain software quality, improving stability across common user flows and reducing crash rate to <strong>&lt; 0.1%</strong></li>
-                    <li>Added features for selecting tables and generating plots, enabling quick visual analysis of stored data for <strong>8+ stakeholders</strong></li>
-                </ol>
-            </div>
-            <div class="card-action"><span>Jan 2024 - June 2024 | Pune, India</span></div>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="featured">Featured</button>
-            <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
-            <button class="filter-btn" data-filter="data">Data & Analytics</button>
-            <button class="filter-btn" data-filter="embedded">Embedded & Hardware</button>
-        </div>
-        <div class="project-container">
-            <div class="project" data-category="featured ai-ml">
-                <img src="images/project1.png" alt="AI and IoT based Integrated Smart Waste Management System" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">IoT</span><span class="tag">TensorFlow</span><span class="tag">Computer Vision</span>
-                    </div>
-                    <h3>AI and IoT based Integrated Smart Waste Management System</h3>
-                    <p>Patent-published AI and IoT-based smart waste management system achieving <strong>92% fill-level accuracy</strong> using load cells, cameras, and ultrasonic sensors to optimize collection routes and reduce operational costs by <strong>30%</strong>.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="featured ai-ml data">
-                <img src="images/project2.png" alt="Network Intrusion Detection System" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">GAN</span><span class="tag">TensorFlow</span><span class="tag">Cybersecurity</span>
-                    </div>
-                    <h3>Network Intrusion Detection System</h3>
-                    <p>GAN-based IDS achieving <strong>94% detection accuracy</strong> that continuously learns from historical traffic to detect emerging threats, reduce false positives by <strong>30%</strong>, and improve recognition of zero-day attacks.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="ai-ml">
-                <img src="images/project10.png" alt="Underwater Image Enhancement" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Image Processing</span>
-                    </div>
-                    <h3>Underwater Image Enhancement</h3>
-                    <p>IJIRT-published work using adaptive histogram equalization and linear histogram manipulation to enhance underwater images, improving visibility by <strong>65%</strong> and recovering details in low-visibility conditions.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="ai-ml">
-                <img src="images/project3.png" alt="Skin Type Analysis using Inception and ITA" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">Inception</span><span class="tag">TensorFlow</span><span class="tag">Computer Vision</span>
-                    </div>
-                    <h3>Skin Type Analysis using Inception and ITA</h3>
-                    <p>Automated skin type classification system using Inception-based features and ITA to provide personalized skincare recommendations based on tone and disease detection.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="data">
-                <img src="images/project4.png" alt="Breast Cancer Detection and Analysis" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Data Analysis</span>
-                    </div>
-                    <h3>Breast Cancer Detection and Analysis</h3>
-                    <p>Haberman dataset analysis showing axillary node count as a key predictor of post-surgery survival, with fewer nodes associated with better long-term outcomes.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="ai-ml embedded">
-                <img src="images/project5.png" alt="Facial Recognition Based Attendance System" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Face Recognition</span>
-                    </div>
-                    <h3>Facial Recognition Based Attendance System</h3>
-                    <p>Face-recognition-based automated attendance system using Haar-Cascade detection and LBPH recognition to reduce manual roll calls and proxy attendance.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="embedded">
-                <img src="images/project6.png" alt="Bluetooth Noticeboard using Arduino" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Arduino</span><span class="tag">IoT</span><span class="tag">Bluetooth</span>
-                    </div>
-                    <h3>Bluetooth Noticeboard using Arduino</h3>
-                    <p>Wireless noticeboard controlled via Bluetooth to receive and display SMS or audio-based messages, replacing manual notice updates with a faster digital approach.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="data">
-                <img src="images/project7.png" alt="Hospital Management System" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">SQL</span><span class="tag">Database</span><span class="tag">DBMS</span>
-                    </div>
-                    <h3>Hospital Management System</h3>
-                    <p>DBMS-backed HMS that centralizes data, improves patient care workflows, optimizes resources, and enforces data security across hospital departments.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="featured ai-ml">
-                <div class="project-images">
-                    <img src="images/project8.png" alt="Virtual Keyboard using Hand Gestures" class="project-img">
-                    <img src="images/project8-2.png" alt="Virtual Keyboard using Hand Gestures Example" class="project-img">
-                </div>
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Hand Tracking</span>
-                    </div>
-                    <h3>Virtual Keyboard using Hand Gestures</h3>
-                    <p>IJIRT-published virtual keyboard for English using image processing and hand gestures, ideal for compact devices and projected surfaces as an eco-friendly alternative to hardware keyboards.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="ai-ml embedded">
-                <img src="images/project9.png" alt="Performance Analysis for Hybrid Beamforming using Deep Learning" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">Beamforming</span>
-                    </div>
-                    <h3>Performance Analysis for Hybrid Beamforming using Deep Learning</h3>
-                    <p>Unsupervised DNN-based hybrid beamforming using RSSI instead of full CSI to improve spectral efficiency and reduce feedback overhead in FDD MIMO systems.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="data">
-                <div class="project-images">
-                    <img src="images/project10-lr.png" alt="Linear Regression" class="project-img">
-                    <img src="images/project10-logr.png" alt="Logistic Regression" class="project-img">
-                    <img src="images/project10-KNN.png" alt="KNN" class="project-img">
-                    <img src="images/project10-sarima.png" alt="SARIMA" class="project-img">
-                </div>
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">Time Series</span><span class="tag">Machine Learning</span>
-                    </div>
-                    <h3>Trends in Bitcoin Price Prediction and Analysis</h3>
-                    <p>Comparative study of KNN, Logistic Regression, SARIMA, and Linear Regression models for Bitcoin price prediction to evaluate forecasting performance on volatile data.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="data">
-                <img src="images/project12-1.png" alt="Crime Analysis using Clustering" class="crime-project-img">
-                <img src="images/project12-2.png" alt="Crime Analysis using Clustering" class="crime-project-img">
-                <img src="images/project12-3.png" alt="Crime Analysis using Clustering" class="crime-project-img">
-                <img src="images/project12-4.png" alt="Crime Analysis using Clustering" class="crime-project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">Clustering</span><span class="tag">Data Analysis</span>
-                    </div>
-                    <h3>Crime Analysis using Clustering</h3>
-                    <p>EDA and clustering on U.S. crime data to uncover spatial and demographic patterns, supporting data-driven strategies for law enforcement and policymakers.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="embedded">
-                <img src="images/project11.png" alt="Thermometer Using PIC18F4520 Microcontroller" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Embedded C</span><span class="tag">Microcontroller</span><span class="tag">Hardware</span>
-                    </div>
-                    <h3>Thermometer Using PIC18F4520 Microcontroller</h3>
-                    <p>Temperature measurement system using LM35 and PIC18F4520, converting analog voltage to digital values and displaying calibrated temperature on an LCD.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project" data-category="ai-ml">
-                <img src="images/project13.png" alt="Classification of Roads using Reinforcement Learning and Q Learning" class="project-img">
-                <div class="project-details">
-                    <div class="tech-tags">
-                        <span class="tag">Python</span><span class="tag">Q-Learning</span><span class="tag">Reinforcement Learning</span>
-                    </div>
-                    <h3>Classification using Reinforcement Learning and Q Learning</h3>
-                    <p>Q-learning-based classifier to label roads as clean or dirty from 237 images, supporting smarter road maintenance and public health interventions.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Dhruv2422" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2">
-                        <img src="images/northeastern.png" alt="Northeastern University Logo" class="responsive-img center-block">
-                    </div>
-                    <div class="col s12 m10">
-                        <p class="education">
-                            <span class="card-title">MS in Artificial Intelligence</span>
-                            <p class="brown-text">Northeastern University, Boston</p>
-                        </p>
-                    </div>
-                </div>
-                <p class="coursework_size"><b>Relevant Coursework (in progress):</b></p>
-                <ol class="coursework">
-                    <li>Machine Learning and Data Mining</li>
-                    <li>Algorithms and Data Structures</li>
-                    <li>Artificial Intelligence</li>
-                    <li>Probability and Statistics for AI</li>
-                    <li>Deep Learning</li>
-                </ol>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <div class="row">
-                    <div class="col s12 m2">
-                        <img src="images/SIU.png" alt="Symbiosis Institute of Technology" class="responsive-img center-block">
-                    </div>
-                    <div class="col s12 m10">
-                        <p class="education">
-                            <span class="card-title">B.Tech in Electronics and Telecommunications Specialization in AI/ML</span>
-                            <p class="brown-text">Symbiosis Institute of Technology, Pune</p>
-                        </p>
-                    </div>
-                </div>
-                <p class="coursework_size"><b>Relevant Coursework covered during B.Tech:</b></p>
-                <ol class="coursework">
-                    <li>Programming and Problem Solving</li>
-                    <li>Data Structures</li>
-                    <li>Machine Learning (Classification, Regression, Clustering and Retrieval, Deep Learning)</li>
-                    <li>Introduction to Data Science</li>
-                    <li>Cybersecurity</li>
-                    <li>Database Systems</li>
-                    <li>Probability, Random Variables and Stochastic Processes</li>
-                    <li>Engineering Mathematics</li>
-                </ol>
-            </div>
-        </div>
-    </section>
-
-    <section id="leadership">
-        <h2>Leadership & Volunteering</h2>
-        <div class="extra">
-            <div class="extra-details">
-                <h4>Event Host</h4>
-                <p>Hosted an IEEE-sponsored event during the college fest and built physical and virtual circuits on Tinkerlab for participants.</p>
-            </div>
-        </div>
-        <div class="extra">
-            <div class="extra-details">
-                <h4>Volunteering</h4>
-                <p>Volunteered at a village named Mulkhed, educating residents on disease prevention and treating potential mosquito breeding sites.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-content">
-            <h3>Programming Languages</h3>
-            <div class="programming-languages">
-                <div class="language-box">
-                    <img src="images/python.jpeg" alt="Python">
-                    <p>Python</p>
-                </div>
-                <div class="language-box">
-                    <img src="images/SQL.png" alt="SQL">
-                    <p>SQL</p>
-                </div>
-                <div class="language-box">
-                    <img src="images/r.png" alt="R">
-                    <p>R</p>
-                </div>
-                <div class="language-box">
-                    <img src="images/C.png" alt="C">
-                    <p>C</p>
-                </div>
-                <div class="language-box">
-                    <img src="images/Cpp.png" alt="C++">
-                    <p>C++</p>
-                </div>
-                <div class="language-box">
-                    <img src="images/MATLAB.png" alt="MATLAB">
-                    <p>MATLAB</p>
-                </div>
-                <div class="language-box">
-                    <img src="images/HTML.png" alt="HTML">
-                    <p>HTML</p>
-                </div>
-                <div class="language-box">
-                    <img src="images/CSS.jpeg" alt="CSS">
-                    <p>CSS</p>
-                </div>
-            </div>
-            <h3>Online Courses</h3>
-            <div class="course-links">
-                <div class="course">
-                    <a href="https://drive.google.com/file/d/1ZY92l-80wtPVyYOrzp-atuzLe1MkUeSA/view?usp=sharing" target="_blank">Microsoft AI Classroom Series</a>
-                </div>
-                <div class="course">
-                    <a href="https://www.coursera.org/account/accomplishments/verify/TKPM9JNC2YXS" target="_blank">Coursera: Blockchain Basics</a>
-                </div>
-                <div class="course">
-                    <a href="https://drive.google.com/file/d/1FJx2gHHnRbpUgL5bDOxN0mgNzcXrT2Ar/view?usp=sharing" target="_blank">Cisco: Networking Essentials</a>
-                </div>
-                <div class="course">
-                    <a href="https://courses.edx.org/certificates/b947ee3d7b9d4533b1e0f422644c9ce2" target="_blank">HarvardX: Data Science: Machine Learning</a>
-                </div>
-                <div class="course">
-                    <a href="https://www.coursera.org/account/accomplishments/verify/XZC2DVBWG8TU" target="_blank">DeepLearning.AI: AI for Everyone</a>
-                </div>
-                <div class="course">
-                    <a href="https://www.coursera.org/account/accomplishments/professional-cert/CJGC504TKHSL" target="_blank">Microsoft Azure Data Scientist Associate (DP100)</a>
-                </div>
-                <div class="course">
-                    <a href="https://www.coursera.org/account/accomplishments/verify/PZ753ET99RA7" target="_blank">Coursera: Software Security</a>
-                </div>
-                <div class="course">
-                    <a href="https://drive.google.com/file/d/1LCzdJRbRfUoNAu27uVFFkXT7fsqZqt_Q/view?usp=sharing" target="_blank">MATLAB: ONRAMP</a>
-                </div>
-                <div class="course">
-                    <a href="https://drive.google.com/file/d/1vtO2N7sgFABhuDjGexpYaUuBglydjUkw/view?usp=sharing" target="_blank">MATLAB: Image Processing</a>
-                </div>
-                <div class="course">
-                    <a href="https://www.coursera.org/account/accomplishments/verify/VDTAQMKP7XL3" target="_blank">IBM: Operating Systems: Overview, Administration, and Security</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="resume">
-        <h3>Resume</h3>
-        <div class="resume-links">
-            <a href="https://drive.google.com/file/d/1SzdcBki7pTOQYgB4GaKglEor0BK6cMG4/view?usp=sharing" class="resume-item" target="_blank">
-                <img src="images/resume.png" alt="Resume Icon">
-                <p>Download Resume</p>
-            </a>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at <a href="mailto:ddolas2422@gmail.com">ddolas2422@gmail.com</a></p>
-        <p>Follow me on <a href="https://www.linkedin.com/in/dhruv-dolas-71b26422b/" target="_blank">LinkedIn</a> and <a href="https://github.com/Dhruv2422" target="_blank">GitHub</a>.</p>
-        <p>Check out my articles on <a href="https://medium.com/@dhruvdolas" target="_blank">Medium</a> for more insights and updates.</p>
-    </section>
-
-    <div id="lightbox" class="lightbox">
-        <span class="close">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
-        <div id="caption"></div>
+      </div>
     </div>
-</div>
+  </aside>
 
-<script src="javascript/typed.min.js"></script>
-<script src="javascript/script.js"></script>
+  <main class="main-content" id="main">
+    <section id="hero" class="hero reveal">
+      <div class="hero-layout">
+        <div class="hero-copy-block">
+          <p class="eyebrow">MS in Artificial Intelligence · Northeastern University</p>
+          <h1>Building machine learning systems and data pipelines that hold up in real-world use.</h1>
+          <p class="hero-copy">
+            I’m Dhruv Dolas, a graduate student in Artificial Intelligence with hands-on experience in data engineering, machine learning, deep learning, and analytics. I’m especially interested in applied AI systems in healthcare, education, and production data environments.
+          </p>
+
+          <div class="hero-pills">
+            <span>Boston, MA</span>
+            <span>Machine Learning</span>
+            <span>Data Engineering</span>
+            <span>Reliable AI</span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="https://drive.google.com/file/d/1SzdcBki7pTOQYgB4GaKglEor0BK6cMG4/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="hero-side-grid">
+          <article class="hero-card stat-card">
+            <span class="hero-card-label">Experience</span>
+            <h2>Associate Data Engineer</h2>
+            <p>Built ETL pipelines for 50+ datasets using Snowflake, AWS, and Oracle.</p>
+          </article>
+          <article class="hero-card stat-card">
+            <span class="hero-card-label">Current focus</span>
+            <h2>Clinical AI reliability</h2>
+            <p>Designing a failure-aware decision support system with escalation logic and OOD detection.</p>
+          </article>
+          <article class="hero-card stat-card">
+            <span class="hero-card-label">Recent ML result</span>
+            <h2>94.7% accuracy</h2>
+            <p>AI vs Real image classifier on CIFAKE with 0.988 ROC-AUC.</p>
+          </article>
+          <article class="hero-card stat-card">
+            <span class="hero-card-label">Research</span>
+            <h2>Patent + publications</h2>
+            <p>Published work in computer vision, image processing, and gesture interfaces.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>What I work on</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>
+            I’m currently pursuing an MS in Artificial Intelligence at Northeastern University after completing my BTech in Electronics and Telecommunications with a minor in Artificial Intelligence and Machine Learning. My work sits at the intersection of machine learning, data engineering, and system design.
+          </p>
+          <p>
+            At Bristlecone, I built and optimized ETL pipelines, worked with Snowflake, AWS, Oracle, and MicroStrategy, and helped improve analytics workflows across enterprise data environments. That experience gave me a strong interest in building systems that are not only accurate, but also scalable, maintainable, and useful in real operations.
+          </p>
+          <p>
+            I’m most interested in machine learning engineering, data engineering, and applied AI roles where I can work on model development, production pipelines, evaluation, and decision-support systems.
+          </p>
+        </div>
+
+        <div class="about-highlights">
+          <article class="highlight-card">
+            <h3>Strengths</h3>
+            <ul>
+              <li>Machine learning workflows and evaluation</li>
+              <li>ETL pipelines and large-scale data handling</li>
+              <li>Applied AI for healthcare and real-world systems</li>
+            </ul>
+          </article>
+          <article class="highlight-card">
+            <h3>Looking for</h3>
+            <ul>
+              <li>ML Engineering roles</li>
+              <li>Data Engineering roles</li>
+              <li>Applied AI internships and full-time opportunities</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="section-heading with-meta">
+        <div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects</h2>
+          <p>Featured projects first, followed by additional work across AI, data systems, computer vision, and embedded applications.</p>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="featured" type="button">Featured</button>
+          <button class="filter-btn" data-filter="ml" type="button">ML / AI</button>
+          <button class="filter-btn" data-filter="data" type="button">Data</button>
+          <button class="filter-btn" data-filter="systems" type="button">Systems</button>
+        </div>
+      </div>
+
+      <div class="projects-grid full-grid">
+        <article class="project-card featured" data-category="featured ml">
+          <div class="project-card-top">
+            <span class="project-type">Featured · Computer Vision</span>
+            <h3>AI vs Real Image Classification</h3>
+          </div>
+          <p>
+            Built a CNN-based classifier on the CIFAKE dataset with 120K images, achieving 94.7% accuracy and 0.988 ROC-AUC. Designed a modular pipeline for preprocessing, training, and evaluation with metrics including precision, recall, F1-score, confusion matrix, and ROC curves.
+          </p>
+          <ul class="project-metrics">
+            <li>94.7% accuracy</li>
+            <li>0.988 ROC-AUC</li>
+            <li>120K images</li>
+          </ul>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>TensorFlow</span>
+            <span>OpenCV</span>
+            <span>CNNs</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Dhruv2422" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card featured" data-category="featured ml systems">
+          <div class="project-card-top">
+            <span class="project-type">Featured · Reliable AI</span>
+            <h3>Failure-Aware Clinical Decision Support System</h3>
+          </div>
+          <p>
+            Designing a multi-agent clinical AI system using the MIMIC-IV dataset covering roughly 425K emergency department visits. The system combines proposer-skeptic reasoning, out-of-distribution detection, and human escalation logic, with evaluation focused on calibration, AUROC, and escalation error rates.
+          </p>
+          <ul class="project-metrics">
+            <li>425K ED visits</li>
+            <li>OOD detection</li>
+            <li>Escalation-aware evaluation</li>
+          </ul>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>Machine Learning</span>
+            <span>Healthcare AI</span>
+            <span>System Design</span>
+          </div>
+        </article>
+
+        <article class="project-card featured" data-category="featured ml systems">
+          <div class="project-card-top">
+            <span class="project-type">Featured · Cybersecurity</span>
+            <h3>Network Intrusion Detection System</h3>
+          </div>
+          <p>
+            Developed an anomaly detection system using GANs and autoencoders to identify cyber threats. Combined feature engineering and model evaluation techniques to strengthen detection quality and improve recognition of abnormal behavior in network data.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>GANs</span>
+            <span>Autoencoders</span>
+            <span>Anomaly Detection</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Dhruv2422" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project-card featured" data-category="featured ml systems">
+          <div class="project-card-top">
+            <span class="project-type">Featured · Patent / IoT</span>
+            <h3>AI & IoT Smart Waste Management System</h3>
+          </div>
+          <p>
+            Designed an IoT-based waste management system using ESP32-CAM and Random Forest for waste classification and monitoring. The project led to a published patent and demonstrates work at the intersection of AI, sensing, and operational systems.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>IoT</span>
+            <span>ESP32-CAM</span>
+            <span>Random Forest</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="data systems">
+          <div class="project-card-top">
+            <span class="project-type">Data Systems</span>
+            <h3>Hospital Management System</h3>
+          </div>
+          <p>
+            Designed a relational database system for managing patient and hospital data, optimized queries, and built workflows for real-time data retrieval and reporting.
+          </p>
+          <div class="tag-list">
+            <span>MySQL</span>
+            <span>DBMS</span>
+            <span>SQL</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ml">
+          <div class="project-card-top">
+            <span class="project-type">Published Research</span>
+            <h3>Skin Type Analysis Using Inception and ITA</h3>
+          </div>
+          <p>
+            Published work focused on skin classification using an ensemble deep learning approach. The project explored computer vision techniques for skin type analysis and personalized recommendations.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>Inception</span>
+            <span>TensorFlow</span>
+            <span>Computer Vision</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ml">
+          <div class="project-card-top">
+            <span class="project-type">Published Research</span>
+            <h3>Underwater Image Enhancement</h3>
+          </div>
+          <p>
+            Applied image processing techniques including histogram equalization to improve underwater image visibility and color correction under low-visibility conditions.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Image Processing</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ml systems">
+          <div class="project-card-top">
+            <span class="project-type">Published Research</span>
+            <h3>Virtual Keyboard using Hand Gestures</h3>
+          </div>
+          <p>
+            Developed a real-time gesture recognition system using OpenCV and Python for touchless typing with hand tracking, key mapping, and webcam-based interaction.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Hand Tracking</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="data ml">
+          <div class="project-card-top">
+            <span class="project-type">Analytics</span>
+            <h3>Breast Cancer Detection and Analysis</h3>
+          </div>
+          <p>
+            Analyzed the Haberman dataset to understand predictors of post-surgery survival, identifying axillary node count as a major explanatory variable.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>Data Analysis</span>
+            <span>ML</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ml systems">
+          <div class="project-card-top">
+            <span class="project-type">Computer Vision</span>
+            <h3>Facial Recognition Based Attendance System</h3>
+          </div>
+          <p>
+            Built an automated attendance system using Haar-Cascade face detection and LBPH face recognition to reduce manual roll calls and proxy attendance.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>Face Recognition</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="systems">
+          <div class="project-card-top">
+            <span class="project-type">Embedded / IoT</span>
+            <h3>Bluetooth Noticeboard using Arduino</h3>
+          </div>
+          <p>
+            Built a wireless digital noticeboard controlled via Bluetooth to display SMS or audio-driven messages as a faster replacement for manual notice updates.
+          </p>
+          <div class="tag-list">
+            <span>Arduino</span>
+            <span>Bluetooth</span>
+            <span>IoT</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="data ml">
+          <div class="project-card-top">
+            <span class="project-type">Time Series / Comparison</span>
+            <h3>Bitcoin Price Prediction and Analysis</h3>
+          </div>
+          <p>
+            Compared KNN, Logistic Regression, SARIMA, and Linear Regression approaches for Bitcoin price prediction to study forecasting performance on volatile time series data.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>SARIMA</span>
+            <span>KNN</span>
+            <span>Time Series</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="data">
+          <div class="project-card-top">
+            <span class="project-type">Clustering / EDA</span>
+            <h3>Crime Analysis using Clustering</h3>
+          </div>
+          <p>
+            Performed exploratory data analysis and clustering on U.S. crime data to uncover spatial and demographic patterns relevant to policy and law-enforcement analysis.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>Clustering</span>
+            <span>EDA</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="systems">
+          <div class="project-card-top">
+            <span class="project-type">Embedded Systems</span>
+            <h3>Thermometer Using PIC18F4520 Microcontroller</h3>
+          </div>
+          <p>
+            Developed a temperature measurement system using LM35 and PIC18F4520 to convert analog signals into calibrated digital temperature readings displayed on LCD hardware.
+          </p>
+          <div class="tag-list">
+            <span>Embedded C</span>
+            <span>Microcontrollers</span>
+            <span>Hardware</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ml">
+          <div class="project-card-top">
+            <span class="project-type">Reinforcement Learning</span>
+            <h3>Classification using Reinforcement Learning and Q Learning</h3>
+          </div>
+          <p>
+            Built a Q-learning based image classification workflow to label roads as clean or dirty, supporting road maintenance and public health monitoring applications.
+          </p>
+          <div class="tag-list">
+            <span>Python</span>
+            <span>Q-Learning</span>
+            <span>Reinforcement Learning</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Professional background</p>
+        <h2>Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <div>
+              <p class="timeline-role">Associate Data Engineer</p>
+              <p class="timeline-company">Bristlecone</p>
+            </div>
+            <span>Jun 2024 - Aug 2025</span>
+          </div>
+          <ul>
+            <li>Built and optimized ETL pipelines using Snowflake, AWS, and Oracle for 50+ datasets with high reliability.</li>
+            <li>Developed analytics dashboards using MicroStrategy, improving operational efficiency by 20%.</li>
+            <li>Implemented data validation and governance processes to ensure data quality.</li>
+            <li>Automated workflows reducing manual effort and improving system scalability.</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-meta">
+            <div>
+              <p class="timeline-role">Software Developer Intern</p>
+              <p class="timeline-company">Hexinnotek LLP</p>
+            </div>
+            <span>Jan 2024 - Jun 2024</span>
+          </div>
+          <ul>
+            <li>Developed database systems improving query performance by 30%.</li>
+            <li>Designed user-friendly interfaces for data access and visualization.</li>
+            <li>Automated reporting pipelines for efficient insights generation.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Education</p>
+        <h2>Academic background</h2>
+      </div>
+
+      <div class="education-grid">
+        <article class="education-card">
+          <div class="education-header">
+            <img src="images/northeastern.png" alt="Northeastern University logo" class="education-logo" />
+            <div>
+              <h3>MS in Artificial Intelligence</h3>
+              <p>Northeastern University · 2025 - Present</p>
+            </div>
+          </div>
+          <p class="muted">Relevant coursework: Machine Learning, Data Processing for AI, Linear Algebra & Probability, Algorithms.</p>
+        </article>
+
+        <article class="education-card">
+          <div class="education-header">
+            <img src="images/SIU.png" alt="Symbiosis Institute of Technology logo" class="education-logo" />
+            <div>
+              <h3>BTech in Electronics and Telecommunications</h3>
+              <p>Symbiosis Institute of Technology · 2020 - 2024</p>
+            </div>
+          </div>
+          <p class="muted">Minor in Artificial Intelligence and Machine Learning · GPA: 8.13/10.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Research and publications</p>
+        <h2>Publications & patent</h2>
+      </div>
+
+      <div class="publication-grid">
+        <article class="publication-card">
+          <h3>AI & IoT Smart Waste Management System</h3>
+          <p class="publication-meta">Patent · 2023</p>
+          <p>Designed an IoT-based system using ESP32-CAM and Random Forest for waste classification and monitoring.</p>
+        </article>
+
+        <article class="publication-card">
+          <h3>Skin Type Analysis Using Inception and ITA</h3>
+          <p class="publication-meta">IJIRT · 2024</p>
+          <p>Published research demonstrating an ensemble deep learning approach for skin classification.</p>
+        </article>
+
+        <article class="publication-card">
+          <h3>Underwater Image Enhancement</h3>
+          <p class="publication-meta">IJIRT · 2024</p>
+          <p>Applied image processing techniques to improve visibility and color correction in underwater scenes.</p>
+        </article>
+
+        <article class="publication-card">
+          <h3>Virtual Keyboard using Hand Gestures</h3>
+          <p class="publication-meta">IJIRT · 2024</p>
+          <p>Developed a real-time gesture recognition system for touchless typing using OpenCV and Python.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Technical skills</p>
+        <h2>Core stack</h2>
+      </div>
+
+      <div class="skills-grid detailed-skills">
+        <article class="skill-group">
+          <h3>Languages</h3>
+          <p>Python, SQL, C++, R</p>
+        </article>
+        <article class="skill-group">
+          <h3>Machine Learning</h3>
+          <p>TensorFlow, Keras, XGBoost, SVM, OpenCV</p>
+        </article>
+        <article class="skill-group">
+          <h3>Data Engineering</h3>
+          <p>Snowflake, AWS, Oracle, MySQL</p>
+        </article>
+        <article class="skill-group">
+          <h3>Tools</h3>
+          <p>Git, Jira, MicroStrategy</p>
+        </article>
+        <article class="skill-group">
+          <h3>Concepts</h3>
+          <p>ETL Pipelines, Data Analysis, Model Evaluation, Dashboarding</p>
+        </article>
+        <article class="skill-group">
+          <h3>Interests</h3>
+          <p>Applied AI, Reliable ML Systems, Healthcare AI, Production Data Workflows</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="leadership" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Leadership & service</p>
+        <h2>Beyond coursework</h2>
+      </div>
+
+      <div class="leadership-grid">
+        <article class="info-card">
+          <h3>Event Host</h3>
+          <p>Hosted an IEEE-sponsored event during a college fest and helped participants work with physical and virtual circuit environments.</p>
+        </article>
+        <article class="info-card">
+          <h3>Volunteering</h3>
+          <p>Volunteered in Mulkhed village, helping educate residents on disease prevention and treatment of mosquito breeding sites.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect</h2>
+        <p>I’m currently looking for machine learning engineering, applied AI, and data engineering opportunities.</p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:ddolas2422@gmail.com">
+          <span>Email</span>
+          <strong>ddolas2422@gmail.com</strong>
+        </a>
+        <a class="contact-card" href="https://www.linkedin.com/in/dhruv-dolas-71b26422b/" target="_blank" rel="noopener noreferrer">
+          <span>LinkedIn</span>
+          <strong>dhruv-dolas-71b26422b</strong>
+        </a>
+        <a class="contact-card" href="https://github.com/Dhruv2422" target="_blank" rel="noopener noreferrer">
+          <span>GitHub</span>
+          <strong>github.com/Dhruv2422</strong>
+        </a>
+        <a class="contact-card" href="https://medium.com/@dhruvdolas" target="_blank" rel="noopener noreferrer">
+          <span>Medium</span>
+          <strong>@dhruvdolas</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="javascript/script.js"></script>
 </body>
 </html>
-
-
